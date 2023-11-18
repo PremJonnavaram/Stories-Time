@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Padauk&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    display: inline;
+}
+
+.navbar{
+    display: flex;
+    background-color: #ffd2d5;
+}
+
+.navbar-brand{
+    font-weight: 500;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 5%;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+    padding-right: 5%;
+    font-size: large;
+}
+
+.nav-item{
+    margin: 0 20px 0 20px;
+    font-size: medium;
+    font-weight: 600;
+    color: #075e65;
+}
+
+.un{
+    justify-content: center;
+}
+.username{
+    font-size: large;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main{
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-heading{
+    font-size: large;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 1%;
+    margin-left: 5%;
+}
+
+.empty{
+    /* margin: 10px; */
+    text-align: center;
+    font-size: large;
+    color: #463484;
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bttn{
+    padding: 10px;
+    background-color: #ffc100;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+}
+
+a {
+ text-decoration: none;
+ color: white;
+}
+#heading{
+    font-family: 'Kanit', sans-serif;
+}
+
+#date{
+    font-family: monospace;
+    font-size: medium;
+    margin-top: 5px;
+}
+
+#about{
+    margin-top: 2%;
+    font-family: 'Raleway', sans-serif;
+    /* line-height: 10px; */
+}

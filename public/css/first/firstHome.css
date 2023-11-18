@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.hero{
+    background-color: #fff;
+    overflow: hidden;
+    color: #697fe2;
+    width: 100%;
+    height: 100%;
+}
+
+/* Header */
+.header{
+    padding: 10px;
+    background-color: #eaf3fa;
+}
+
+/* Nav bar */
+.navbar-brand{
+    font-weight: 800;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* color: #463484; */
+    padding-left: 4%;
+}
+
+.navbar-nav{
+    display: inline-block;
+    justify-content: end;
+    margin-left: auto;
+    padding-right: 10%;
+    font-size: large;
+}
+
+.nav-item{
+    margin: 0 2px 0 20px;
+    font-size: large;
+    font-weight: 500;
+    color: #1d4689;
+}
+
+/* Central */
+.central{
+    display: flex;
+    margin:auto;
+    margin-left: 3%;
+}
+
+/* Left */
+.left{
+    display: block;
+    width: 40%;
+    font-size: larger;
+    margin: auto;
+    padding: auto;
+}
+
+.left-words{
+    font-size: 400%;
+}
+
+/* Right */
+.right-image{
+    width: 100%;
+    height: 100%;
+}
+
+.right{
+    display: flex;
+    justify-content: end;
+    width: 60%;
+    margin: auto;
+    padding: auto;
+}
+
+/* Buttons */
+.bttn{
+    width: 40%;
+    margin-top: 2%;
+    background-color: #233863;
+    padding: 13px;
+    border-radius: 55px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+.bttn:a{
+    text-decoration: none;
+}

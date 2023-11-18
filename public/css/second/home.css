@@ -1,0 +1,118 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    /* overflow: hidden; */
+}
+
+.header{
+    background-color: #ffd2d5;
+    height: 70%;
+    width: 100%;
+    color: #06353b;
+}
+
+.navbar-brand{
+    font-weight: 500;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* color: #463484; */
+    padding-left: 5%;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+    padding-right: 5%;
+    font-size: large;
+}
+
+.nav-item{
+    margin: 0 20px 0 20px;
+    font-size: medium;
+    font-weight: 600;
+    color: #075e65;
+}
+
+.nav{
+    display: inline;
+    /* position: fixed; */
+}
+
+.central{
+    margin: 3%;
+    display: flex;
+    height: 80%
+}
+
+.head-left{
+    width: 40%;
+    font-size: large;
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+.head-right{
+    width: 50%;
+    margin: auto;
+    justify-content: end;
+}
+
+.hr_image{
+    width: 80%;
+    height: 90%;
+    margin-left: 20%;
+    margin-bottom: 10%;
+}
+
+.bttn{
+    width: 35%;
+    margin-top: 2%;
+    background-color: #FFC100;
+    margin: auto;
+    max-width: 40%;
+    padding: 13px;
+    border-radius: 50px;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    color: #463484;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.main{
+    margin: 2%;
+    padding-left: 3%;
+}
+
+.main-heading{
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.post-row{
+    padding: 1%;
+}
+
+.recent_H{
+    font-family: monospace;
+    font-weight: 600;
+}
+
+#heading{
+    font-family: 'Kanit', sans-serif;
+}
+
+#date{
+    font-family: monospace;
+    font-size: medium;
+    margin-top: 5px;
+}
+
+#about{
+    margin-top: 2%;
+    font-family: 'Raleway', sans-serif;
+    /* line-height: 10px; */
+}

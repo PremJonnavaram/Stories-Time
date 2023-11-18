@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Padauk&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    display: inline;
+}
+
+.navbar{
+    background-color: #ffd2d5;
+}
+
+.navbar-brand{
+    font-weight: 500;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 5%;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+    padding-right: 5%;
+    font-size: large;
+}
+
+.nav-item{
+    margin: 0 20px 0 20px;
+    font-size: medium;
+    font-weight: 600;
+    color: #075e65;
+}
+
+
+
+.main{
+    justify-content: center;
+}
+
+.center{
+    display: block;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding: 0% 3% 0% 3%;
+    margin-top: 40px;
+}
+
+.item{
+    padding: 5px 0px 5px 0px;
+    font-family: 'Raleway', sans-serif;
+}
+.username{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    color: blue;
+}
+
+.name{
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+}
+
+.about{
+    font-family: 'Padauk', sans-serif;
+    font-size: 20px;
+}
+
+.item-h{
+    /* font-family: 'Kanit', sans-serif; */
+    font-size: large;
+    font-weight: 700;
+}
+
+.description{
+    line-height: 35px;
+    font-size: large;
+}
+
+.delete-btn{
+    margin: auto;
+    position: absolute;
+    right: 12%;
+    text-align: center;
+    padding: 6px;
+    background-color: red;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+}

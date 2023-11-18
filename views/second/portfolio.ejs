@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | StoriesTime</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/second/portfolio.css">
+</head>
+<body>  
+    <div class="hero">
+        <div class="nav">
+            <nav class="navbar navbar-expand-lg ">
+                <a class="navbar-brand" href="/home">STORIES TIME</a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="/home">HOME </a>
+                    <a class="nav-item nav-link" href="/home/create">CREATE</a>
+                    <a class="nav-item nav-link active" href="/home/portfolio">PORTFOLIO</a>
+                    <a class="nav-item nav-link" href="/">LOGOUT</a>
+                  </div>
+                </div>
+              </nav>
+        </div>
+
+        <div class="main">
+            <div class="main-heading">
+                <% if(user.id == curr_user.id){ %>
+                  <h2 class="recent_H"> Hello <span style="text-transform: uppercase; padding: 0px 4px 0px 4px;"><%= user.name %></span>  your uploaded stories are....</h2>
+                <% } else { %>
+                    <h2 class="recent_H"> Uploaded Stories of <span style="text-transform: uppercase; padding: 0px 4px 0px 4px;"><%= user.name %></span> are....</h2>
+                <% } %>   
+            </div>
+            <% if(user.Posts.length > 0) { %> 
+                <% user.Posts.forEach(story => { %> 
+                    <div class="post-row d-flex justify-content-center">
+                        <div class="col-md-8">
+                          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                              <h3 class="mb-0" id="heading"><%= story.name  %> </h3>
+                              <div class="mb-2 text-muted" id="date"><%= story.createdAt  %> </div>
+                              <p class="card-text mb-auto" id="about" > <%= story.about %>  </p>
+                              <a href="/home/storyDetail/<%= story._id  %> " class="stretched-link ">Continue reading</a>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                              <img class="bd-placeholder-img" width="300" height="250" src="/img/cute-girl.jpg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                <% }); %>
+            <% } else { %>
+                <div class="empty">
+                    <p>You didn't posted anything till now</p>
+                    <button class="bttn"> <a href="/home/create">Let's Go</a></button>
+                </div>
+            <% } %> 
+        </div>
+
+    </div>
+</body>
+</html>

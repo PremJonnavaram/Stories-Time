@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.hero{
+    background-color: #eceaf8;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+    color: #463484;
+}
+
+/* Creating a central box */
+.box{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4.5%;
+    background-color: #fff;
+    display: flex;
+    width: 70%;
+    height: 80%;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 30px #463484;
+}
+
+.left{
+    width: 45%;
+    margin: 3%;
+}
+
+.image-right{
+    width: 95%;
+    height: 100%;
+    padding: 1%;
+}
+
+/* Creating a right box with image and color */
+.right{
+    display: inline-block;
+    width: 65%;
+    height: 100%;
+    background-color: #443090;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.another{
+    display: flex;
+    justify-content: end;
+    font-size: small;
+}
+
+.bttn{
+    width: 100%;
+    margin-top: 4%;
+    background-color: #FFC100;
+    padding: 13px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    color: #463484;
+}
+
+.form_s{
+    font-size: large;
+    margin: 2%;
+    margin-top: 15%;
+}
+
+.form-group{
+    padding: 1.5%;
+    margin: 1%;
+    width: 100%;
+}
+
+/* -----------------    END     ----------------------- */

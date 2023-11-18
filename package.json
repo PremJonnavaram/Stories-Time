@@ -1,0 +1,37 @@
+{
+  "name": "stories-time",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prem J",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "bootstrap": "^5.3.2",
+    "config": "^3.3.9",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
+    "font-awesome": "^4.7.0",
+    "jsonwebtoken": "^9.0.2",
+    "key": "^0.1.11",
+    "method-override": "^3.0.0",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1",
+    "params": "^0.1.1",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^8.0.0",
+    "svg": "^0.1.0",
+    "validator": "^13.11.0"
+  }
+}
