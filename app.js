@@ -18,11 +18,21 @@ app.set("view engine", "ejs");
 
 // Mongodb connection
 const connectDB = async () => {
-  await mongoose
-    .connect(config.dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => console.log("MongoDB Connected"))
-    .catch((err) => console.log(err));
+  try {
+    await mongoose.connect(config.dbURI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      // Add this line if needed
+      // Other mongoose options can be added here
+    });
+    console.log("MongoDB Connected");
+  } catch (error) {
+    console.error("Error connecting to MongoDB:", error.message);
+    // You might want to handle the error in a more robust way (e.g., logging, throwing, or exiting the application)
+  }
 };
+
+// Call the connectDB function to establish the connection
 connectDB();
 
 // Express body parser
