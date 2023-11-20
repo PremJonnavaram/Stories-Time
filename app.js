@@ -6,7 +6,7 @@ const session = require("express-session");
 const morgan = require("morgan");
 const path = require("path");
 const config = require("./config/key");
-// const flash = require("express-flash");
+
 
 const app = express();
 
@@ -34,13 +34,13 @@ connectDB();
 // Express body parser
 app.use(express.urlencoded({ extended: true }));
 
-//using middle wears
+
 app.use(express.static(__dirname + "/public"));
 app.use("/static", express.static(path.join(__dirname, "public")));
 app.use(express.json());
 app.use(morgan("dev"));
 
-// Session
+
 app.use(session({
   secret: 'it is project secret.',
   resave: true,
