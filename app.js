@@ -58,6 +58,7 @@ app.use("/"  , require("./routes/user.js"));
 app.use("/home", require("./routes/secondHome_routes"));
 
 //LISTENING ON PORT 3000
-app.listen(3000, () => {
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
     console.log("server is Listening on port 3000");
 });
