@@ -35,7 +35,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Static files
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(path.join(__dirname, "public")));
 app.use("/static", express.static(path.join(__dirname, "public")));
 
 // Morgan (HTTP request logger)
@@ -58,7 +58,7 @@ app.use(flash());
 
 // Routes
 app.use("/", require("./routes/user.js"));
-app.use("/home", require("./routes/secondHome_routes"));
+app.use("/home", require("./routes/secondhome.js")); // Assuming the file is named "secondhome.js"
 
 // Start the server
 const port = process.env.PORT || 3000;
