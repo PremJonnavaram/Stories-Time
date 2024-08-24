@@ -11,7 +11,7 @@ const app = express();
 
 // Passport Config
 require("./config/passport")(passport);
-
+app.set('views', path.join(__dirname, 'views'));
 // EJS
 app.set("view engine", "ejs");
 
