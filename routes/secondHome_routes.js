@@ -6,7 +6,7 @@ const { ensureAuthenticated, forwardAuthenticated } = require("../config/auth");
 
 
 
-router.get("/" , ensureAuthenticated ,(req,res) => {
+router.get("/home" , ensureAuthenticated ,(req,res) => {
     Post.find()
         .populate("userId")
         .then((result) => {
@@ -18,12 +18,12 @@ router.get("/" , ensureAuthenticated ,(req,res) => {
 });
 
 
-router.get("/create" ,ensureAuthenticated, (req,res) => {
+router.get("/home/create" ,ensureAuthenticated, (req,res) => {
     res.render("second/create");
 });
 
 
-router.get('/storyDetail/:id' ,ensureAuthenticated, async(req,res) => {
+router.get('/home/storyDetail/:id' ,ensureAuthenticated, async(req,res) => {
     const id = req.params.id;
     Post.findById(id)
         .populate("userId")
@@ -37,7 +37,7 @@ router.get('/storyDetail/:id' ,ensureAuthenticated, async(req,res) => {
 });
 
 
-router.get("/portfolio" ,ensureAuthenticated, async(req,res) => {
+router.get("/home/portfolio" ,ensureAuthenticated, async(req,res) => {
     User.findById(req.user)
     .populate("Posts")
     .then(result => {
@@ -50,7 +50,7 @@ router.get("/portfolio" ,ensureAuthenticated, async(req,res) => {
 });
 
 
-router.get("/portfolio/:id" , ensureAuthenticated , (req,res) => {
+router.get("/home/portfolio/:id" , ensureAuthenticated , (req,res) => {
     const id = req.params.id;
     User.findById(id)
         .populate("Posts")
@@ -64,7 +64,7 @@ router.get("/portfolio/:id" , ensureAuthenticated , (req,res) => {
 })
 
 
-router.post("/create"  , ensureAuthenticated, async(req,res) => {
+router.post("/home/create"  , ensureAuthenticated, async(req,res) => {
     const { userId } = req.body;
 
     console.log(req.body);
@@ -97,7 +97,7 @@ router.post("/create"  , ensureAuthenticated, async(req,res) => {
 });
 
 
-router.post("/delete/:id" , ensureAuthenticated ,(req,res) => {
+router.post("/home/delete/:id" , ensureAuthenticated ,(req,res) => {
     const id = req.params.id;
     Post.findByIdAndDelete(id)
         .then((result) => {
